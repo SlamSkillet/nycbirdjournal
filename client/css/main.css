@@ -1,0 +1,220 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+	background-color: #f3f3f3;
+	margin: 0;	
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	color: #333333;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+button {
+	font-family: 'Inconsolata', monospace;
+	font-weight: 300;
+	font-size: 0.8em;
+	background: transparent;
+	color: #a2a3a5;
+  border: 1px solid #a2a3a5;
+  cursor: pointer;
+  padding: 2px 8px 2px 8px;
+  -webkit-appearance: none;
+}
+
+input {
+	display: inline;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 300;
+	font-size: 0.8em;
+	background: transparent;
+	color: #a2a3a5;
+  border: 1px solid #a2a3a5;
+  padding-left: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 3px;
+  width: 106px;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+select {
+	display: inline;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 300;
+	font-size: 0.8em;
+	background: transparent;
+	color: #a2a3a5;
+  border: 1px solid #a2a3a5;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 0;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+label {
+	display: inline;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #a2a3a5;
+}
+
+span {
+	font-family: 'Inconsolata', monospace;
+	color: #333333;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+li {
+	padding-bottom: 30px;
+}
+
+a {
+	color: #333333;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.3);
+}
+
+.overlay {
+	background-color: #f3f3f3;
+	z-index: 2;
+	width: 100vw;
+	height: 1000px;
+	position: fixed;
+	top: 70px;
+	-webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+  opacity: 1;
+}
+
+.slamlogo {
+    position: relative;
+    width: 200px;
+    left: calc(50% - 100px);
+}
+
+.journalheadcontainer {
+		position: fixed;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 2;
+    background-color: #f3f3f3;
+    width: 100%;
+}
+
+.menulink {
+	display: inline-block;
+    font-family: 'Inconsolata', monospace;
+    color: #333333;
+    font-weight: 300;
+    font-size: 0.75em;
+    text-decoration: none;
+    position: relative;
+    top: -3px;
+}
+
+.menulink:hover {
+	text-decoration: underline;
+}
+
+.menulinkcontainer {
+	text-align: center;
+}
+
+.birdlogentryform {
+	width: 286px;
+	max-width: 300px;
+	height: 50px;
+	background-color: transparent;
+	font-family: 'Inconsolata', monospace;
+	color: #a2a3a5;
+	font-weight: 300;
+	font-size: 0.8em;
+	border: 1px solid #a2a3a5;
+	padding-left: 8px;
+	padding-top: 2px;
+	-webkit-appearance: none;
+  border-radius: 0;
+}
+
+.birdlogcontainer {
+	margin-top: 105px;
+	width: 300px;
+	margin-left: calc(50% - 150px);
+	padding-bottom: 30px;
+	//margin-right: auto;
+}
+
+.birdloglist {
+}
+
+.birdlogusername {
+	
+	color: #bdb6a2;
+	
+}
+
+.birdlogdate {
+	color: #a2a3a5;
+}
+
+.birdlogspecies {
+	color: green;
+}
+
+.birdlogentry {}
+
+.reqproductdelete {
+	margin-top: 10px;
+}
+
+.birdlogform {
+}
+
+.editproductcontainer {
+	text-align: center;
+}
+
+.editproductform {
+	width: 300px;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Google Maps */
+
+#map {
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    /* left: calc(50% - 250px); */
+    left: 0;
+    top: calc(50% - 110px);
+}
+
