@@ -17,6 +17,12 @@ app.controller('speciesController', ['$scope', '$http', function($scope, $http) 
             case 'Peregrine Falcon':
                 speciesparam = 'falco%20peregrinus';
                 break;
+            case 'Red-Tailed Hawk':
+                speciesparam = 'buteo%20jamaicensis';
+                break;
+            case 'American Woodcock':
+                speciesparam = 'scolopax%20minor';
+                break;
         }
     console.log(speciesparam);    
     fetch();
@@ -42,6 +48,12 @@ function mapInit(speciesparam) {
       }
       if (speciesparam === 'falco%20peregrinus') {
         mapMarker = 'img/cutout_peregrinefalconsmall.png';
+      }
+      if (speciesparam === 'buteo%20jamaicensis') {
+        mapMarker = 'img/cutout_redtailedhawksmall.png';
+      }
+      if (speciesparam === 'scolopax%20minor') {
+        mapMarker = 'img/cutout_woodcocksmall.png';
       }
 
       function initialize() {
