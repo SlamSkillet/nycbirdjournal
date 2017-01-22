@@ -1,16 +1,22 @@
 app.controller('speciesController', ['$scope', '$http', function($scope, $http) {
 
-  // $scope.$watch('search', function() {
-  //   fetch();
-  // });
-
-  // $scope.search = 'phalacrocorax%20auritus';
-
   var speciesparam = 'phalacrocorax%20auritus';
 
   $scope.sortChange = function() {
     console.log($scope.speciessort);   
     switch ($scope.speciessort) {
+            case 'House Sparrow':
+                speciesparam = 'passer%20domesticus';
+                break;
+            case 'Pigeon':
+                speciesparam = 'columba%20livia';
+                break;
+            case 'European Starling':
+                speciesparam = 'sturnus%20vulgaris';
+                break;
+            case 'Monk Parakeet':
+                speciesparam = 'myiopsitta%20monachus';
+                break;
             case 'Double-Crested Cormorant':
                 speciesparam = 'phalacrocorax%20auritus';
                 break;
@@ -22,6 +28,12 @@ app.controller('speciesController', ['$scope', '$http', function($scope, $http) 
                 break;
             case 'American Woodcock':
                 speciesparam = 'scolopax%20minor';
+                break;
+            case 'Bufflehead':
+                speciesparam = 'bucephala%20albeola';
+                break;
+            case 'Mallard':
+                speciesparam = 'anas%20platyrhynchos';
                 break;
         }
     console.log(speciesparam);    
@@ -43,18 +55,37 @@ function mapInit(speciesparam) {
 
       var map;
       var mapmarker;
+      if (speciesparam === 'passer%20domesticus') {
+        mapMarker = 'img/cutout_housesparrowsmall.png';
+      }
+      if (speciesparam === 'columba%20livia') {
+        mapMarker = 'img/cutout_pigeonsmall.png';
+      }
+      if (speciesparam === 'sturnus%20vulgaris') {
+        mapMarker = 'img/cutout_starlingsmall.png';
+      }
+      if (speciesparam === 'myiopsitta%20monachus') {
+        mapMarker = 'img/cutout_monkparakeetsmall.png';
+      }
+      if (speciesparam === 'buteo%20jamaicensis') {
+        mapMarker = 'img/cutout_redtailedhawksmall.png';
+      }
       if (speciesparam === 'phalacrocorax%20auritus') {
         mapMarker = 'img/cutout_cormorantsmall.png';
       }
       if (speciesparam === 'falco%20peregrinus') {
         mapMarker = 'img/cutout_peregrinefalconsmall.png';
       }
-      if (speciesparam === 'buteo%20jamaicensis') {
-        mapMarker = 'img/cutout_redtailedhawksmall.png';
-      }
       if (speciesparam === 'scolopax%20minor') {
         mapMarker = 'img/cutout_woodcocksmall.png';
       }
+      if (speciesparam === 'bucephala%20albeola') {
+        mapMarker = 'img/cutout_buffleheadsmall.png';
+      }
+      if (speciesparam === 'anas%20platyrhynchos') {
+        mapMarker = 'img/cutout_mallardsmall.png';
+      }
+
 
       function initialize() {
         var mapOptions = {
@@ -351,51 +382,7 @@ function mapInit(speciesparam) {
       }
 
       initialize();
-      //google.maps.event.addDomListener(window, 'load', initialize);
 
     }
-
-
-
-
-      
-    
-
-  // $scope.getFilter = function() {
-  //       switch ($scope.filter) {
-  //           case 'All':
-  //               return undefined;
-  //           case 'House Sparrow':
-  //               return {species: 'House Sparrow'};
-  //           case 'Pigeon':
-  //               return {species: 'Pigeon'};
-  //           case 'European Starling':
-  //               return {species: 'European Starling'};
-  //           case 'Monk Parakeet':
-  //               return {species: 'Monk Parakeet'};
-  //           case 'Red-Tailed Hawk':
-  //               return {species: 'Red-Tailed Hawk'};
-  //           case 'Double-Crested Cormorant':
-  //               return {species: 'Double-Crested Cormorant'};
-  //           case 'Peregrine Falcon':
-  //               return {species: 'Peregrine Falcon'};
-  //           case 'Bufflehead':
-  //               return {species: 'Bufflehead'};
-  //           case 'American Woodcock':
-  //               return {species: 'American Woodcock'};
-  //           case 'Mallard':
-  //               return {species: 'Mallard'};
-  //           case 'Northern Cardinal':
-  //               return {species: 'Northern Cardinal'};
-  //           case 'Herring Gull':
-  //               return {species: 'Herring Gull'};
-  //           case 'American Robin':
-  //               return {species: 'American Robin'};            
-  //           case 'Other':
-  //               return {species: 'Other'};
-  //           default:
-  //               return undefined;
-  //       }
-  //   }
 
 }]);
