@@ -1,6 +1,6 @@
 {
   "name": "NYC-Bird-Journal",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "dependencies": {
     "angular": "^1.5.9",
     "bcryptjs": "^2.3.0",

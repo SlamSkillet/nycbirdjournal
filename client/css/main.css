@@ -114,11 +114,11 @@ button:focus {
 .slamlogo {
     position: relative;
     width: 200px;
-    left: calc(50% - 100px);
+    left: calc(50% - 95px);
 }
 
 .journalheadcontainer {
-		position: fixed;
+	position: fixed;
     top: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -136,6 +136,7 @@ button:focus {
     text-decoration: none;
     position: relative;
     top: -3px;
+    left: 5px;
 }
 
 .menulink:hover {
@@ -165,7 +166,7 @@ button:focus {
 .birdlogcontainer {
 	margin-top: 105px;
 	width: 300px;
-	margin-left: calc(50% - 150px);
+	margin-left: calc(50% - 140px);
 	padding-bottom: 30px;
 	//margin-right: auto;
 }
