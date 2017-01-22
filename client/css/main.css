@@ -207,7 +207,7 @@ button:focus {
 	margin-right: auto;
 }
 
-/* Google Maps */
+/* Species */
 
 #map {
     height: 300px;
@@ -215,6 +215,24 @@ button:focus {
     position: absolute;
     /* left: calc(50% - 250px); */
     left: 0;
-    top: calc(50% - 110px);
+    top: calc(50% - 135px);
+}
+
+.speciesmemocontainer {
+	position: absolute;
+	bottom: 50px;
+	text-align: center;
+	width: 300px;
+	left: calc(50% - (0.5 * 300px));
+}
+
+.speciesmemo {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #a2a3a5;
+
 }
 
