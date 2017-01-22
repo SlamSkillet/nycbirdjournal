@@ -1,6 +1,6 @@
 {
-  "name": "mean-demo",
-  "version": "0.0.1",
+  "name": "NYC Bird Journal",
+  "version": "1.0.0",
   "dependencies": {
     "angular": "^1.5.9",
     "bcryptjs": "^2.3.0",
