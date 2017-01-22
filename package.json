@@ -1,5 +1,5 @@
 {
-  "name": "NYC Bird Journal",
+  "name": "NYC-Bird-Journal",
   "version": "1.0.0",
   "dependencies": {
     "angular": "^1.5.9",
