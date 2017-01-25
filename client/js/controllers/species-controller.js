@@ -3,7 +3,6 @@ app.controller('speciesController', ['$scope', '$http', function($scope, $http) 
   var speciesparam = 'phalacrocorax%20auritus';
 
   $scope.sortChange = function() {
-    console.log($scope.speciessort);   
     switch ($scope.speciessort) {
             case 'House Sparrow':
                 speciesparam = 'passer%20domesticus';
@@ -36,7 +35,6 @@ app.controller('speciesController', ['$scope', '$http', function($scope, $http) 
                 speciesparam = 'anas%20platyrhynchos';
                 break;
         }
-    console.log(speciesparam);    
     fetch();
   }
 
